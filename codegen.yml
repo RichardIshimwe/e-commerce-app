@@ -1,0 +1,13 @@
+schema:
+  - https://evolved-piranha-53.hasura.app/v1/graphql:
+      headers:
+        x-hasura-admin-secret: 5y6rpagJFN08J71fuk7qZvqp3AnYgIvP3q8ejkDu2m7xcMzjyhIZpp87LlEKJ5zI
+documents: "queries/**/*.graphql"
+generates:
+  generated/:
+    preset: client
+    plugins:
+      - typescript
+      - typescript-operations
+    config:
+      fetcher: graphql-request

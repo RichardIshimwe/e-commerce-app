@@ -1,0 +1,7 @@
+query todoQuery {
+   Todos {
+     id
+     name
+     task
+   }
+ }
